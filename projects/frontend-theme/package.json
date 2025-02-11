@@ -1,0 +1,8 @@
+{
+    "name": "@cyberrangecz-platform/theme",
+    "version": "0.0.1",
+    "sideEffects": false,
+    "peerDependencies": {
+        "@danielmoncada/angular-datetime-picker": "^18.1.0"
+    }
+}
