@@ -100,7 +100,7 @@
         box-shadow: none;
     }
     25%, 35% {
-        background: rgba(62, 67, 255, 1);
+        background: rgba(62, 67, 232, 1);
         box-shadow: inset 0 0 0 2px var(--sys-background);
     }
 }
