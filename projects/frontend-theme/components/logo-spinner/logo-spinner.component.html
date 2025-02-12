@@ -1,20 +1,12 @@
 <div class="spinner-container">
-  <div class="perspective">
-    <div class="scene">
-      @for (position of ["tl", "tr", "bl", "br"]; track position){
-        <div class="plane xy {{position}}">
-            <div class="line"></div>
-            <div class="line perpendicular"></div>
+    <div class="perspective">
+        <div class="scene">
+            <div class="plane xy"></div>
+            <div class="plane xz"></div>
+            <div class="plane yz"></div>
         </div>
-        <div class="plane xz {{position}}">
-            <div class="line"></div>
-            <div class="line perpendicular"></div>
-        </div>
-        <div class="plane yz {{position}}">
-            <div class="line"></div>
-            <div class="line perpendicular"></div>
-        </div>
-      }
     </div>
-  </div>
+    <div class="line x"></div>
+    <div class="line y"></div>
+    <div class="line z"></div>
 </div>
