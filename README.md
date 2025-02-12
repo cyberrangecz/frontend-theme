@@ -4,7 +4,15 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ## Usage
 
-To use the theme in your project follow these steps:
+### Assets
+
+Assets are available for import at `"@cyberrangecz-platform/theme/assets`.
+
+### Components
+
+Components are available for import at `"@cyberrangecz-platform/theme/components`. They are self-contained and standalone.
+
+### Styles and theme
 
 1. Run `npm install @cyberrangecz-platform/theme`
 2. Import `"@cyberrangecz-platform/theme/theming/apply-theme.scss"` either in your global `styles.scss` or in your `angular.json` file, under the `styles` array.
@@ -20,13 +28,11 @@ To use the theme in your project follow these steps:
     - `error`
 - Available shades are: `0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100`
 
-Assets are available in `"@cyberrangecz-platform/theme/assets`.
-
 In case you want more fine-grained control, you can use individual files from the theme package:
 
 ```
 projects/frontend-theme/theming/
-├── apply-theme.scss                -> imports all theme files
+├── apply-theme.scss                -> imports all theme files and applies the theme
 ├── definitions
 │    ├── theme-definition.scss      -> contains $theme and $typography-theme variables
 │    └── variables.scss             -> upon import, defines all theme variables 

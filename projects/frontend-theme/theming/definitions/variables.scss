@@ -11,7 +11,7 @@
             $color: mat.get-theme-color($theme, $prefix, $shade);
 
             @if $color != null {
-                --app-#{$prefix}-#{$shade}: #{$color};
+                --#{$prefix}-#{$shade}: #{$color};
             } @else {
                 @warn "Color shade #{$shade} not found for #{$prefix}.";
             }
