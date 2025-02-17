@@ -20,6 +20,7 @@
         "@angular/platform-browser": "^18.2.13",
         "@angular/platform-browser-dynamic": "^18.2.13",
         "@angular/router": "^18.2.13",
+        "@cyberrangecz-platform/theme": "file:/projects/frontend-theme/",
         "@danielmoncada/angular-datetime-picker": "^18.1.0",
         "@sentinel/common": "^18.0.4",
         "@sentinel/components": "^18.2.7",
@@ -27,8 +28,7 @@
         "material-design-icons-iconfont": "^6.7.0",
         "rxjs": "~7.8.0",
         "tslib": "^2.3.0",
-        "zone.js": "^0.14.10",
-        "@cyberrangecz-platform/theme": "file:./projects/frontend-theme"
+        "zone.js": "^0.14.10"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^18.2.14",

@@ -107,7 +107,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/frontend-theme/ng-package.json"
+                        "project": "projects/frontend-theme/ng-package.json",
                     }
                 },
                 "test": {

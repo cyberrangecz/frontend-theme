@@ -3,6 +3,10 @@
     "version": "0.0.2",
     "sideEffects": false,
     "peerDependencies": {
+        "@sentinel/common": "^18.0.4",
+        "@sentinel/components": "^18.2.7",
+        "@sentinel/layout": "^18.1.4",
+        "@angular/material": "^18.2.14",
         "@danielmoncada/angular-datetime-picker": "^18.1.0"
     }
 }
