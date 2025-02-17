@@ -31,7 +31,7 @@ You can add them under `/assets` path by adding this to your angular.json:
 
 The assets can then be accessed like this:
 ```html
-<img src="assets//logo.svg" alt="CyberRangeᶜᶻ Platform logo">
+<img src="/assets/logo/logo.svg" alt="CyberRangeᶜᶻ Platform logo">
 ```
 
 ### Components
