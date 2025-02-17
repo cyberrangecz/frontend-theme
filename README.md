@@ -8,6 +8,32 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 Assets are available for import at `"@cyberrangecz-platform/theme/assets`.
 
+You can add them under `/assets` path by adding this to your angular.json:
+```json
+"architect": {
+    ...
+    "build": {
+        ...
+        "options": {
+            ...
+            "assets": [
+                ...
+                {
+                "glob": "**/*",
+                "input": "node_modules/@cyberrangecz-platform/theme/assets",
+                "output": "assets/"
+                }
+            ]
+        }
+    }
+}
+```
+
+The assets can then be accessed like this:
+```html
+<img src="assets//logo.svg" alt="CyberRangeᶜᶻ Platform logo">
+```
+
 ### Components
 
 Components are available for import at `"@cyberrangecz-platform/theme/components`. They are self-contained and standalone.
@@ -32,19 +58,23 @@ In case you want more fine-grained control, you can use individual files from th
 
 ```
 projects/frontend-theme/theming/
-├── apply-theme.scss                -> imports all theme files and applies the theme
+├── apply-all.scss                   -> applies theme, generates variables and imports all styles
 ├── definitions
-│    ├── theme-definition.scss      -> contains $theme and $typography-theme variables
-│    └── variables.scss             -> upon import, defines all theme variables 
+│    ├── theme-definition.scss       -> contains $theme and $typography-theme variables
+│    └── variables.scss              -> upon import, defines all theme variables 
 └── styles
-    ├── auth-provider.scss          -> login related styles
-    ├── document.scss               -> styles for main document (html, body)
-    ├── markdown.scss               -> styles for markdown and sentinel-markdown
-    ├── misc.scss                   -> various small tweaks
-    ├── panels.scss                 -> styles for various cards and panels
-    ├── resizer.scss                -> styles for corner resizer for resizable elements
-    ├── scrollbar.scss              -> styles for custom scrollbars
-    └── styles.scss                 -> imports all styles files
+    ├── auth-provider.scss           -> login related styles
+    ├── document.scss                -> styles for main document (html, body)
+    ├── markdown.scss                -> styles for markdown and sentinel-markdown
+    ├── misc.scss                    -> various small tweaks
+    ├── panels.scss                  -> styles for various cards and panels
+    ├── resizer.scss                 -> styles for corner resizer for resizable elements
+    ├── scrollbar.scss               -> styles for custom scrollbars
+    ├── visualizations-overview.scss -> styles needed for visualizations overview module
+    └── styles.scss                  -> imports all styles files
+        └── modules
+            ├── hurdling-visualizations.scss -> styles for hurdling visualizations
+            └── visualizations-overview.scss -> styles for visualizations overview module
 ```
 
 ## Prerequisites for development
