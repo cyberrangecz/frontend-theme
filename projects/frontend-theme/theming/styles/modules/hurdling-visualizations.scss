@@ -1,12 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
-
-body {
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 0px;
-    background-color: #f6f6f6;
-}
-
 .level-grid-container, .progress-bar, .trainee-grid-container, .container-fluid, .visualization-container, .trainee-detail-container, .trainee-selection {
     background-color: white;
     border-radius: 2px;
@@ -18,12 +9,12 @@ body {
 }
 
 .level-grid-container {
-    margin: 1px 20px 0px !important;
+    margin: 1px 20px 0 !important;
     padding: 1px 0;
 }
 
 .vis-participant-grid {
-    margin: 10px auto 0px !important;
+    margin: 10px auto 0 !important;
 }
 
 .visualization-container {
@@ -32,6 +23,6 @@ body {
 }
 
 .trainee-detail-container {
-    margin: 1px 20px 0px !important;
+    margin: 1px 20px 0 !important;
     padding: 1px 0;
 }

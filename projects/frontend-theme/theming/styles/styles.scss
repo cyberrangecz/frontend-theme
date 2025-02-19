@@ -2,10 +2,12 @@
 
 @import "auth-provider.scss";
 @import "document.scss";
-@import "markdown.scss";
 @import "misc";
-@import "panels.scss";
-@import "resizer.scss";
-@import "scrollbar.scss";
 @import "modules/visualizations-overview.scss";
 @import "modules/hurdling-visualizations.scss";
+@import "components/markdown.scss";
+@import "components/panels.scss";
+@import "components/resizer.scss";
+@import "components/scrollbar.scss";
+@import "components/sidebar.scss";
+@import "components/user";
