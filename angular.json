@@ -28,11 +28,18 @@
                         "assets": [
                             {
                                 "glob": "**/*",
-                                "input": "public"
+                                "input": "src/assets",
+                                "output": "assets/"
+                            },
+                            {
+                                "glob": "**/*",
+                                "input": "projects/frontend-theme/assets/",
+                                "output": "assets/"
                             }
+
                         ],
                         "styles": [
-                            "src/styles.scss"
+                            "projects/frontend-theme/theming/apply-all.scss"
                         ],
                         "scripts": []
                     },
@@ -107,7 +114,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "project": "projects/frontend-theme/ng-package.json",
+                        "project": "projects/frontend-theme/ng-package.json"
                     }
                 },
                 "test": {

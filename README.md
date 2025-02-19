@@ -6,7 +6,7 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ### Assets
 
-Assets are available for import at `"@cyberrangecz-platform/theme/assets`.
+Assets are available for import at `"@crczp/theme/assets`.
 
 You can add them under `/assets` path by adding this to your angular.json:
 ```json
@@ -20,7 +20,7 @@ You can add them under `/assets` path by adding this to your angular.json:
                 ...
                 {
                 "glob": "**/*",
-                "input": "node_modules/@cyberrangecz-platform/theme/assets",
+                "input": "node_modules/@crczp/theme/assets",
                 "output": "assets/"
                 }
             ]
@@ -29,19 +29,19 @@ You can add them under `/assets` path by adding this to your angular.json:
 }
 ```
 
-The assets can then be accessed like this:
+Afterward assets can then be accessed like this:
 ```html
 <img src="/assets/logo/logo.svg" alt="CyberRangeᶜᶻ Platform logo">
 ```
 
 ### Components
 
-Components are available for import at `"@cyberrangecz-platform/theme/components`. They are self-contained and standalone.
+Components are available for import at `"@crczp/theme/components`. They are self-contained and standalone.
 
 ### Styles and theme
 
-1. Run `npm install @cyberrangecz-platform/theme`
-2. Import `"@cyberrangecz-platform/theme/theming/apply-theme.scss"` either in your global `styles.scss` or in your `angular.json` file, under the `styles` array.
+1. Run `npm install @crczp/theme`
+2. Import `"@crczp/theme/theming/apply-theme.scss"` either in your global `styles.scss` or in your `angular.json` file, under the `styles` array.
 
 - This will apply the theme and styles to your project automatically.
 - Variables for theme colors will be automatically available in your project. Format is `--<color>-<shade>`. For example, `--primary-50` will give you the primary color with shade 50.
@@ -54,28 +54,7 @@ Components are available for import at `"@cyberrangecz-platform/theme/components
     - `error`
 - Available shades are: `0, 10, 20, 25, 30, 35, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100`
 
-In case you want more fine-grained control, you can use individual files from the theme package:
-
-```
-projects/frontend-theme/theming/
-├── apply-all.scss                   -> applies theme, generates variables and imports all styles
-├── definitions
-│    ├── theme-definition.scss       -> contains $theme and $typography-theme variables
-│    └── variables.scss              -> upon import, defines all theme variables 
-└── styles
-    ├── auth-provider.scss           -> login related styles
-    ├── document.scss                -> styles for main document (html, body)
-    ├── markdown.scss                -> styles for markdown and sentinel-markdown
-    ├── misc.scss                    -> various small tweaks
-    ├── panels.scss                  -> styles for various cards and panels
-    ├── resizer.scss                 -> styles for corner resizer for resizable elements
-    ├── scrollbar.scss               -> styles for custom scrollbars
-    ├── visualizations-overview.scss -> styles needed for visualizations overview module
-    └── styles.scss                  -> imports all styles files
-        └── modules
-            ├── hurdling-visualizations.scss -> styles for hurdling visualizations
-            └── visualizations-overview.scss -> styles for visualizations overview module
-```
+In case you want more fine-grained control over styles applied, you can use individual styles from `/theming/styles`.
 
 ## Prerequisites for development
 

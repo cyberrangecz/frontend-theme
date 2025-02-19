@@ -1,6 +1,6 @@
 {
-    "name": "@cyberrangecz-platform/theme",
-    "version": "0.0.2",
+    "name": "@crczp/theme",
+    "version": "0.0.1",
     "sideEffects": false,
     "peerDependencies": {
         "@sentinel/common": "^18.0.4",

@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SentinelLayout1Module } from '@sentinel/layout/layout1';
 import { ActivatedRoute } from '@angular/router';
-import { LogoSpinnerComponent } from "@cyberrangecz-platform/theme/components/logo-spinner/logo-spinner.component";
+import { LogoSpinnerComponent } from '../../projects/frontend-theme/components/logo-spinner/logo-spinner.component';
 
 @NgModule({
     declarations: [AppComponent],

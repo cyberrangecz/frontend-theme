@@ -3,7 +3,7 @@
     "private": true,
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "ng serve --ssl",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
@@ -20,7 +20,6 @@
         "@angular/platform-browser": "^18.2.13",
         "@angular/platform-browser-dynamic": "^18.2.13",
         "@angular/router": "^18.2.13",
-        "@cyberrangecz-platform/theme": "file:/projects/frontend-theme/",
         "@danielmoncada/angular-datetime-picker": "^18.1.0",
         "@sentinel/common": "^18.0.4",
         "@sentinel/components": "^18.2.7",
