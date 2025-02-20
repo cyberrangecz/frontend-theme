@@ -8,24 +8,16 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 Assets are available for import at `"@crczp/theme/assets`.
 
-You can add them under `/assets` path by adding this to your angular.json:
+To use the assets in your app, include them in your build under desired output path:
 ```json
-"architect": {
-    ...
-    "build": {
-        ...
-        "options": {
-            ...
-            "assets": [
-                ...
-                {
-                "glob": "**/*",
-                "input": "node_modules/@crczp/theme/assets",
-                "output": "assets/"
-                }
-            ]
+"options": {
+    "assets": [
+        {
+            "glob": "**/*",
+            "input": "node_modules/@crczp/theme/assets",
+            "output": "assets/"
         }
-    }
+    ]
 }
 ```
 

@@ -3,3 +3,12 @@ crczp-auth-provider-picker {
     display: block;
     margin: 10% auto;
 }
+
+.sentinel-auth-provider-list {
+    display: flex;
+    justify-content: center;
+}
+
+.providers button {
+    max-width: 500px;
+}
