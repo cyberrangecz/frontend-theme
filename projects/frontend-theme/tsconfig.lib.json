@@ -1,8 +1,6 @@
 {
     "extends": "../../tsconfig.json",
-    "include": {
-        "lib": [
-            "public-api.ts"
-        ]
-    }
+    "include": [
+        "public-api.ts",
+    ]
 }

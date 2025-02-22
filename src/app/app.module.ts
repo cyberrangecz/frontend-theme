@@ -17,7 +17,7 @@ import { LogoSpinnerComponent } from '../../projects/frontend-theme/components/l
     providers: [
         { provide: ActivatedRoute, useValue: {} }
     ],
-    bootstrap: [AppComponent],
+    bootstrap: [AppComponent]
 })
 /**
  * Main app module. Contains global providers and module imports.

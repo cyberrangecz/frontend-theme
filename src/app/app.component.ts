@@ -14,7 +14,7 @@ export class AppComponent {
             label: 'Long agenda name with many words',
             children: [
                 {
-                    label: 'Long menu item name with many words',
+                    label: 'Long menu item name with many words'
                 },
                 {
                     label: 'Short'
@@ -26,7 +26,7 @@ export class AppComponent {
             children: [
                 ...[...Array(15).keys()].map(
                     i => ({
-                        label: `Item ${i+1}`
+                        label: `Item ${i + 1}`
                     } as MenuElement)
                 )
             ]
@@ -34,15 +34,15 @@ export class AppComponent {
     ];
 
     user: SentinelUser = {
-        name: "Example User",
-        login: "user@noreply.com",
-        pictureSrc: "/assets/logo/logo-blue.svg"
-    }
+        name: 'Example User',
+        login: 'user@noreply.com',
+        pictureSrc: '/assets/logo/logo-blue.svg'
+    };
 
     /**
      * Pulls version from package.json
      */
     getVersion(): string {
-        return packageJson.version
+        return packageJson.version;
     }
 }
