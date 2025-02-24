@@ -1,6 +1,6 @@
 {
     "name": "@crczp/theme",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "sideEffects": false,
     "peerDependencies": {
         "@sentinel/common": "^18.0.4",
@@ -8,5 +8,9 @@
         "@sentinel/layout": "^18.1.4",
         "@angular/material": "^18.2.14",
         "@danielmoncada/angular-datetime-picker": "^18.1.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cyberrangecz/frontend-theme.git"
     }
 }

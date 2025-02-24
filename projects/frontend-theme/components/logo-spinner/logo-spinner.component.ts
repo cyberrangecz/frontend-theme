@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
     selector: 'crczp-logo-spinner',
     standalone: true,
     templateUrl: './logo-spinner.component.html',
-    styleUrl: './logo-spinner.component.scss'
+    styleUrl: './logo-spinner.component.scss',
 })
-export class LogoSpinnerComponent {
-}
+export class LogoSpinnerComponent {}
