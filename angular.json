@@ -28,18 +28,13 @@
                         "assets": [
                             {
                                 "glob": "**/*",
-                                "input": "src/assets",
-                                "output": "assets/"
-                            },
-                            {
-                                "glob": "**/*",
                                 "input": "projects/frontend-theme/assets/",
                                 "output": "assets/"
                             }
 
                         ],
                         "styles": [
-                            "projects/frontend-theme/theming/apply-all.scss"
+                            "node_modules/@crczp/theme/theming/apply-all.scss"
                         ],
                         "scripts": []
                     },

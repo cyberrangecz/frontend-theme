@@ -5,12 +5,13 @@
 @use '@sentinel/layout/sidebar-mixin' as sentinel-layout-sidebar;
 @use '@sentinel/components/theming' as sentinel-components ;
 @use '@sentinel/components/typography' as sentinel-typography ;
-@use 'definitions/theme-definition' as theme;
+@use './definitions/theme-definition' as theme;
 
-@import "styles/styles.scss";
+@import "./styles/styles.scss";
 
 :root {
     @include mat.core();
+    @include mat.core-theme($theme);
 
     @include mat.color-variants-backwards-compatibility(theme.$theme);
     @include mat.all-component-themes(theme.$theme);

@@ -1,13 +1,13 @@
 @import "@danielmoncada/angular-datetime-picker/assets/style/picker.min.css";
 
-@import "auth-provider.scss";
-@import "document.scss";
-@import "misc";
-@import "modules/visualizations-overview.scss";
-@import "modules/hurdling-visualizations.scss";
-@import "components/markdown.scss";
-@import "components/panels.scss";
-@import "components/resizer.scss";
-@import "components/scrollbar.scss";
-@import "components/sidebar.scss";
-@import "components/user";
+@import "./auth-provider.scss";
+@import "./document.scss";
+@import "./misc";
+@import "./modules/visualizations-overview.scss";
+@import "./modules/hurdling-visualizations.scss";
+@import "./components/markdown.scss";
+@import "./components/panels.scss";
+@import "./components/resizer.scss";
+@import "./components/scrollbar.scss";
+@import "./components/layout";
+@import "./components/user";

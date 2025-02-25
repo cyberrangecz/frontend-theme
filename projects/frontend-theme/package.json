@@ -1,6 +1,6 @@
 {
     "name": "@crczp/theme",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "sideEffects": false,
     "peerDependencies": {
         "@sentinel/common": "^18.0.4",

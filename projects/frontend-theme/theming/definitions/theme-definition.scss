@@ -4,6 +4,9 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 // Note: Color palettes are generated from primary: #3E43E8, secondary: #2E32AD, tertiary: #1E2173, neutral: #B2B2B8
 $_palettes: (
     primary: (
@@ -147,7 +150,6 @@ $theme: mat.define-theme((
         use-system-variables: true,
     ),
     typography: (
-        use-system-variables: true,
         plain-family: Inter,
         brand-family: Inter,
     ),
@@ -155,31 +157,37 @@ $theme: mat.define-theme((
 
 
 $typography-levels: mat.m2-define-typography-config(
+    $font-family: Inter,
     $headline-1: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 500,
         $font-size: 2.5rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $headline-2: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 2rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $headline-3: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1.5rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $headline-4: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1.25rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $headline-5: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 3rem,
         $line-height: 1.2,
@@ -192,36 +200,42 @@ $typography-levels: mat.m2-define-typography-config(
         $letter-spacing: normal,
     ),
     $subtitle-1: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1.75rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $subtitle-2: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1.5rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $body-1: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $body-2: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $button: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 500,
         $font-size: 0.875rem,
         $line-height: 1.2,
         $letter-spacing: normal,
     ),
     $caption: mat.m2-define-typography-level(
+        $font-family: Inter,
         $font-weight: 400,
         $font-size: 1rem,
         $line-height: 1.2,

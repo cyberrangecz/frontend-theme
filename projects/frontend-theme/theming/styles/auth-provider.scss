@@ -9,6 +9,14 @@ crczp-auth-provider-picker {
     justify-content: center;
 }
 
+.providers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .providers button {
     max-width: 500px;
 }
+
