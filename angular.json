@@ -34,7 +34,7 @@
 
                         ],
                         "styles": [
-                            "node_modules/@crczp/theme/theming/apply-all.scss"
+                            "projects/frontend-theme/theming/apply-all.scss"
                         ],
                         "scripts": []
                     },
