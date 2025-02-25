@@ -33,7 +33,7 @@ Components are available for import at `"@crczp/theme/components`. They are stan
 ### Styles and theme
 
 1. Run `npm install @crczp/theme`
-2. Import `"@crczp/theme/theming/apply-all.scss"` either in your global `styles.scss` or in your `angular.json` file, under the `styles` array.
+2. Import `"@crczp/theme/theming/apply-all.scss"` in your global `styles.scss` or `"node_modules/@crczp/theme/theming/apply-all.scss"` in your `angular.json`, under the `styles` array.
 
 - This will apply the theme and styles to your project automatically.
 - Variables for theme colors will be automatically available in your project. Format is `--<color>-<shade>`. For example, `--primary-50` will give you the primary color with shade 50.
