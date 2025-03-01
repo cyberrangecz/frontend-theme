@@ -5,7 +5,7 @@
  * fit parent radius
  */
 .highlighted-resizer::-webkit-resizer {
-    background: radial-gradient(circle at 100% 100%, var(--app-primary-50) 25%, transparent 75%);
+    background: radial-gradient(circle at 100% 100%, var(--primary-50) 25%, transparent 75%);
     border-radius: 0 0 0.75rem 0;
     overflow: hidden;
 }
