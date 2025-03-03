@@ -31,7 +31,6 @@
                                 "input": "projects/frontend-theme/assets/",
                                 "output": "assets/"
                             }
-
                         ],
                         "styles": [
                             "projects/frontend-theme/theming/apply-all.scss"
