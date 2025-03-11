@@ -1,0 +1,15 @@
+.element-outline {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid var(--neutral-90);
+}
+
+.element-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.25rem 1rem;
+    background: var(--neutral-90);
+    width: min-content;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}

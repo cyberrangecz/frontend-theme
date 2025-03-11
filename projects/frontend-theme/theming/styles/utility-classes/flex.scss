@@ -1,0 +1,41 @@
+.vertical-flex, .vflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-flex, .hflex {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jstart-acenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.jend-acenter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
