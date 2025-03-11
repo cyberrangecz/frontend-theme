@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { AgendaContainer, MenuElement, SentinelUser } from '@sentinel/layout';
+import { SentinelUser } from '@sentinel/layout';
 import packageJson from '../../projects/frontend-theme/package.json';
+import { NavBuilder, NavConfig } from '../../projects/frontend-theme/components/util/nav-builder';
 
 @Component({
     selector: 'crczp-root',
@@ -9,29 +10,6 @@ import packageJson from '../../projects/frontend-theme/package.json';
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
-    agendaContainers: AgendaContainer[] = [
-        {
-            label: 'Long agenda name with many words',
-            children: [
-                {
-                    label: 'Long menu item name with many words'
-                },
-                {
-                    label: 'Short'
-                }
-            ]
-        },
-        {
-            label: 'Agenda many items',
-            children: [
-                ...[...Array(15).keys()].map(
-                    i => ({
-                        label: `Item ${i + 1}`
-                    } as MenuElement)
-                )
-            ]
-        }
-    ];
 
     user: SentinelUser = {
         name: 'Example User',
@@ -39,10 +17,31 @@ export class AppComponent {
         pictureSrc: '/assets/logo/logo-blue.svg'
     };
 
-    /**
-     * Pulls version from package.json
-     */
-    getVersion(): string {
+    agendasConfig: NavConfig = {
+        agendaContainers: [{
+            label: 'Basic',
+            agendas: [
+                {
+                    label: 'Titles',
+                    path: 'titles'
+                }
+            ]
+        },
+            {
+                label: 'Sentinel',
+                agendas: [
+                    {
+                        label: 'Login',
+                        path: 'login'
+                    }
+                ]
+            }
+        ]
+    };
+
+    get version(): string {
         return packageJson.version;
     }
+
+    protected readonly NavBuilder = NavBuilder;
 }

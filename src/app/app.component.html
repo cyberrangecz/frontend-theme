@@ -1,12 +1,13 @@
 <sentinel-layout1
-    title="Theme"
-    [version]="getVersion()"
+    [version]="version"
     logoSrc="/assets/logo/logo.svg"
-    [agendaContainers]="agendaContainers"
     [user]="user"
+    [agendaContainers]="NavBuilder.buildNav(agendasConfig)"
 >
     <div role="toolbar">
-        Toolbar content
+        <span class="toolbar-username">
+            {{ user.name }}
+        </span>
     </div>
-    <crczp-logo-spinner />
+    <router-outlet></router-outlet>
 </sentinel-layout1>

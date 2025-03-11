@@ -8,14 +8,22 @@
     min-height: 75px;
 }
 
+sentinel-root-agenda-container .container {
+    font-weight: 700;
+    color: var(--neutral-80) !important;
+}
+
+sentinel-root-agenda-container .mat-divider {
+    border-color: var(--neutral-70) !important;
+    border-top-width: 2px !important;
+}
+
+sentinel-root-agenda-container * {
+    font-size: 14px;
+}
+
 
 .toolbar-username {
-    user-select: none;
-    color: white;
-    padding: 0.25rem 0.75rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    border-radius: 2rem;
-    /* Font with serifs for name, other than Times New Roman */
-    font-family: 'Georgia', serif;
+    font-size: 1.625rem;
+    font-weight: 600;
 }

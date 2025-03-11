@@ -3,6 +3,7 @@
 @import "./auth-provider.scss";
 @import "./document.scss";
 @import "./misc.scss";
+@import "./font.scss";
 @import "./modules/visualizations-overview.scss";
 @import "./modules/hurdling-visualizations.scss";
 @import "./components/markdown.scss";
@@ -11,4 +12,7 @@
 @import "./components/layout.scss";
 @import "./components/resizer.scss";
 @import "./components/user.scss";
-@import "./font-size.scss";
+@import "./utility-classes/flex.scss";
+@import "./utility-classes/size.scss";
+@import "./utility-classes/spacing.scss";
+@import "./utility-classes/colors.scss";

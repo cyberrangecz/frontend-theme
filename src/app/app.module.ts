@@ -3,8 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { SentinelLayout1Module } from '@sentinel/layout/layout1';
-import { ActivatedRoute } from '@angular/router';
-import { LogoSpinnerComponent } from '../../projects/frontend-theme/components/logo-spinner/logo-spinner.component';
+import { RouterOutlet } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { SentinelConfirmationDialogComponent } from '@sentinel/components/dialogs';
+import { LayoutCommonComponentsMaterialModule } from '@sentinel/layout/common-components';
+import { SentinelAuthModule } from '@sentinel/auth';
+import { exampleAuthConfig } from './example-auth';
 
 @NgModule({
     declarations: [AppComponent],
@@ -12,10 +17,15 @@ import { LogoSpinnerComponent } from '../../projects/frontend-theme/components/l
         BrowserModule,
         BrowserAnimationsModule,
         SentinelLayout1Module,
-        LogoSpinnerComponent
-    ],
-    providers: [
-        { provide: ActivatedRoute, useValue: {} }
+        RouterOutlet,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        SentinelLayout1Module,
+        SentinelConfirmationDialogComponent,
+        LayoutCommonComponentsMaterialModule,
+        SentinelAuthModule.forRoot(exampleAuthConfig),
     ],
     bootstrap: [AppComponent]
 })
