@@ -2,23 +2,22 @@ import * as layout from '@sentinel/layout';
 import { AgendaContainer } from '@sentinel/layout';
 
 export type NavAgendaContainerConfig = {
-    label: string,
-    agendas: (NavAgendaContainerConfig | NavAgendaConfig)[]
-}
+    label: string;
+    agendas: (NavAgendaContainerConfig | NavAgendaConfig)[];
+};
 
 export type NavAgendaConfig = layout.Agenda & {
-    canActivate?: () => boolean
-}
+    canActivate?: () => boolean;
+};
 
 export type NavConfig = {
-    agendaContainers: NavAgendaContainerConfig[]
-}
+    agendaContainers: NavAgendaContainerConfig[];
+};
 
 export class NavBuilder {
-
     public static buildNav(navConfig: NavConfig): AgendaContainer[] {
         const elements: AgendaContainer[] = [];
-        navConfig.agendaContainers.forEach(containerConfig => {
+        navConfig.agendaContainers.forEach((containerConfig) => {
             this.appendTopLevelContainer(elements, containerConfig);
         });
         return elements;
@@ -31,21 +30,28 @@ export class NavBuilder {
         return elements;
     }
 
-    private static appendTopLevelContainer(elements: layout.AgendaContainer[], containerConfig: NavAgendaContainerConfig): layout.AgendaContainer[] {
+    private static appendTopLevelContainer(
+        elements: layout.AgendaContainer[],
+        containerConfig: NavAgendaContainerConfig,
+    ): layout.AgendaContainer[] {
         return this.appendContainer(elements, containerConfig) as layout.AgendaContainer[];
     }
 
-    private static appendContainer(elements: layout.MenuElement[], containerConfig: NavAgendaContainerConfig): layout.MenuElement[] {
-        const container = new layout.AgendaContainer(containerConfig.label, [])
-        containerConfig.agendas.forEach(agendaConfig => {
+    private static appendContainer(
+        elements: layout.MenuElement[],
+        containerConfig: NavAgendaContainerConfig,
+    ): layout.MenuElement[] {
+        const container = new layout.AgendaContainer(containerConfig.label, []);
+        containerConfig.agendas.forEach((agendaConfig) => {
             if ('agendas' in agendaConfig) {
-                this.appendContainer(container.children,agendaConfig)
+                this.appendContainer(container.children, agendaConfig);
             } else {
-                this.appendAgenda(container.children, agendaConfig)
-            }});
+                this.appendAgenda(container.children, agendaConfig);
+            }
+        });
         if (container.children.length > 0) {
-            elements.push(container)
+            elements.push(container);
         }
-        return elements
+        return elements;
     }
 }
