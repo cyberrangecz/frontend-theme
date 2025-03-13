@@ -35,6 +35,15 @@ export class AppComponent {
                         path: 'login'
                     }
                 ]
+            },
+            {
+                label: 'Material',
+                agendas: [
+                    {
+                        label: 'Containers',
+                        path: 'containers'
+                    }
+                ]
             }
         ]
     };
