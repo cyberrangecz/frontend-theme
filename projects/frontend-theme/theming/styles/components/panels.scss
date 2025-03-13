@@ -16,3 +16,8 @@ mat-expansion-panel-header {
 .mat-expansion-panel-body {
     padding-top: 1.25rem;
 }
+
+
+mat-card.mat-mdc-card {
+    background-color: var(--primary-98);
+}
