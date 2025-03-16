@@ -8,34 +8,37 @@
     flex-direction: row;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+$justify-content: (
+    fs: flex-start,
+    fe: flex-end,
+    c: center,
+    sb: space-between,
+    sa: space-around
+);
+
+@each $justify in $justify-content {
+    .jc-#{$justify} {
+        justify-content: map-get($justify-content, $justify);
+    }
 }
 
-.jstart-acenter {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+$align-items: (
+    fs: flex-start,
+    fe: flex-end,
+    c: center,
+    b: baseline,
+    s: stretch
+);
+
+@each $align in $align-items {
+    .ai-#{$align} {
+        align-items: map-get($align-items, $align);
+    }
 }
 
-.jend-acenter {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
 
-.flex-start {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
 
-.flex-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
+
+
 
 
