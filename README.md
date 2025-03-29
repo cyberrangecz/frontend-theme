@@ -69,19 +69,13 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ### Spacing
 
-| Class name      | options                         | description              |
-|-----------------|---------------------------------|--------------------------|
-| `g-<size>rem`   | 0.25, 0.5, 0.75, 1, .., 3.75, 4 | Gap in rem               |
-| `m-<size>rem`   | 0.25, 0.5, 0.75, 1, .., 3.75, 4 | Margin in rem            |
-| `p-<size>rem`   | 0.25, 0.5, 0.75, 1, .., 3.75, 4 | Padding in rem           |
-| `p-<size>rem-t` | 10, 20, 25, 30,..., 90, 100     | Padding in rem at top    |
-| `p-<size>rem-b` | 10, 20, 25, 30,..., 90, 100     | Padding in rem at bottom |
-| `p-<size>rem-l` | 10, 20, 25, 30,..., 90, 100     | Padding in rem at left   |
-| `p-<size>rem-r` | 10, 20, 25, 30,..., 90, 100     | Padding in rem at right  |
-| `m-<size>rem-t` | 10, 20, 25, 30,..., 90, 100     | Margin in rem at top     |
-| `m-<size>rem-b` | 10, 20, 25, 30,..., 90, 100     | Margin in rem at bottom  |
-| `m-<size>rem-l` | 10, 20, 25, 30,..., 90, 100     | Margin in rem at left    |
-| `m-<size>rem-r` | 10, 20, 25, 30,..., 90, 100     | Margin in rem at right   |
+| Class name           | options                                   | description            |
+|----------------------|-------------------------------------------|------------------------|
+| `g-<size>rem`        | 0.25, 0.5, 0.75, 1, .., 3.75, 4           | Gap in rem             |
+| `p-<size>rem`        | 0.25, 0.5, 0.75, 1, .., 3.75, 4           | Padding in rem         |
+| `m-<size>rem`        | 0.25, 0.5, 0.75, 1, .., 3.75, 4           | Margin in rem          |
+| `p-<size>rem-<side>` | 0.25, 0.5, 0.75, 1, .., 3.75, 4 ; t,l,r,b | Padding in rem at side |
+| `m-<size>rem-<side>` | 0.25, 0.5, 0.75, 1, .., 3.75, 4 ; t,l,r,b | Margin in rem at side  |
 
 ## Usage
 
