@@ -4,22 +4,28 @@
 }
 
 @for $i from 1 through 10 {
-    .w-#{$i * 10} {
-        width: percentage(#{$i * 10 / 100});
+    $size: calc($i * 10 / 100);
+    $size-name: calc($i * 10);
+
+    .w-#{$size-name} {
+        width: percentage($size);
     }
 
-    .h-#{$i * 10} {
-        height: percentage(#{$i * 10  / 100});
+    .h-#{$size-name} {
+        height: percentage($size);
     }
 }
 
 @for $i from 1 through 3 {
-    .w-#{$i * 25} {
-        width: percentage(#{$i * 25  / 100});
+    $size: calc($i * 25 / 100);
+    $size-name: calc($i * 25);
+
+    .w-#{$size-name} {
+        width: percentage($size);
     }
 
-    .h-#{$i * 25} {
-        height: percentage(#{$i * 25  / 100});
+    .h-#{$size-name} {
+        height: percentage($size);
     }
 }
 
@@ -33,12 +39,14 @@
 }
 
 @for $i from 1 through 16 {
-    .w-#{decimal-to-name($i / 4)}rem {
-        width: #{$i}rem;
+    $size: calc($i / 4);
+
+    .w-#{decimal-to-name($size)}rem {
+        width: #{$size}rem;
     }
 
-    .h-#{decimal-to-name($i / 4)}rem {
-        height: #{$i}rem;
+    .h-#{decimal-to-name($size)}rem {
+        height: #{$size}rem;
     }
 }
 

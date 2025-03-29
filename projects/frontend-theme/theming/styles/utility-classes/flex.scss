@@ -8,6 +8,12 @@
     flex-direction: row;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 $justify-content: (
     fs: flex-start,
     fe: flex-end,
@@ -15,12 +21,12 @@ $justify-content: (
     s: stretch,
     sb: space-between,
     sa: space-around,
-    se: space-evenly,
+    se: space-evenly
 );
 
-@each $justify in $justify-content {
-    .jc-#{$justify} {
-        justify-content: map-get($justify-content, $justify);
+@each $key, $value in $justify-content {
+    .jc-#{$key} {
+        justify-content: $value;
     }
 }
 
@@ -29,18 +35,11 @@ $align-items: (
     fe: flex-end,
     c: center,
     b: baseline,
-    s: stretch,
+    s: stretch
 );
 
-@each $align in $align-items {
-    .ai-#{$align} {
-        align-items: map-get($align-items, $align);
+@each $key, $value in $align-items {
+    .ai-#{$key} {
+        align-items: $value;
     }
 }
-
-
-
-
-
-
-
