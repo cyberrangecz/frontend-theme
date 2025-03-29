@@ -36,6 +36,14 @@
     }
 }
 
+.b-primary {
+    background-color: var(--primary);
+}
+
+.b-primary-f {
+    background-color: var(--primary) !important;
+}
+
 .f-light-f {
     color: var(--neutral-98) !important;
 }
