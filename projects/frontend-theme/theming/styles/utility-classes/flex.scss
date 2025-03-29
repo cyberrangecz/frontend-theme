@@ -12,8 +12,10 @@ $justify-content: (
     fs: flex-start,
     fe: flex-end,
     c: center,
+    s: stretch,
     sb: space-between,
-    sa: space-around
+    sa: space-around,
+    se: space-evenly,
 );
 
 @each $justify in $justify-content {
@@ -27,7 +29,7 @@ $align-items: (
     fe: flex-end,
     c: center,
     b: baseline,
-    s: stretch
+    s: stretch,
 );
 
 @each $align in $align-items {
