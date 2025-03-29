@@ -37,22 +37,22 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ### Flexbox
 
-| Class name                  | description                   |
-|-----------------------------|-------------------------------|
-| `vertical-flex / --vflex`   | Colunn flexbox                |
-| `horizontal-flex / --hflex` | Row flexbox                   |
-| `jc-fs`                     | Justify content flex-start    |
-| `jc-fe`                     | Justify content flex-end      |
-| `jc-c`                      | Justify content center        |
-| `jc-s`                      | Justify content stretch       |
-| `jc-sb`                     | Justify content space-between |
-| `jc-sa`                     | Justify content space-around  |
-| `jc-se`                     | Justify content space-evenly  |
-| `ai-fs`                     | Align items flex-start        |
-| `ai-fe`                     | Align items flex-end          |
-| `ai-c`                      | Align items center            |
-| `ai-s`                      | Align items stretch           |
-| `ai-b`                      | Align items baseline          |
+| Class name                | description                   |
+|---------------------------|-------------------------------|
+| `vertical-flex / vflex`   | Colunn flexbox                |
+| `horizontal-flex / hflex` | Row flexbox                   |
+| `jc-fs`                   | Justify content flex-start    |
+| `jc-fe`                   | Justify content flex-end      |
+| `jc-c`                    | Justify content center        |
+| `jc-s`                    | Justify content stretch       |
+| `jc-sb`                   | Justify content space-between |
+| `jc-sa`                   | Justify content space-around  |
+| `jc-se`                   | Justify content space-evenly  |
+| `ai-fs`                   | Align items flex-start        |
+| `ai-fe`                   | Align items flex-end          |
+| `ai-c`                    | Align items center            |
+| `ai-s`                    | Align items stretch           |
+| `ai-b`                    | Align items baseline          |
 
 
 ### Size
