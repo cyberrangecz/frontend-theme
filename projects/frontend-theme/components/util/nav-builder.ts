@@ -10,14 +10,10 @@ export type NavAgendaConfig = layout.Agenda & {
     canActivate?: () => boolean;
 };
 
-export type NavConfig = {
-    agendaContainers: NavAgendaContainerConfig[];
-};
-
 export class NavBuilder {
-    public static buildNav(navConfig: NavConfig): AgendaContainer[] {
+    public static buildNav(navContainers: NavAgendaContainerConfig[]): AgendaContainer[] {
         const elements: AgendaContainer[] = [];
-        navConfig.agendaContainers.forEach((containerConfig) => {
+        navContainers.forEach((containerConfig) => {
             this.appendTopLevelContainer(elements, containerConfig);
         });
         return elements;
