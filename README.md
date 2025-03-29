@@ -19,20 +19,20 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ### Color classes
 
-| Class name              | options                                                | description                                                                  |
-|-------------------------|--------------------------------------------------------|------------------------------------------------------------------------------|
-| `bg-<shade>`            | `any valid shade`                                      | Set background color to shade of primary                                     |
-| `fg-<shade>`            | `any valid shade`                                      | Set foreground color to shade of primary                                     |
-| `bg-<prefix>-<shade>`   | `any prefix from primary to error and any valid shade` | Set background color to shade of prefix                                      |
-| `fg-<prefix>-<shade>`   | `any prefix from primary to error and any valid shade` | Set foreground color to shade of prefix                                      |
-| `bg-<shade>-f`          | `any valid shade`                                      | Set background color to shade of primary with !important to override Angular |
-| `fg-<shade>-f`          | `any valid shade`                                      | Set foreground color to shade of primary with !important to override Angular |
-| `bg-<prefix>-<shade>-f` | `any prefix from primary to error and any valid shade` | Set background color to shade of prefix with !important to override Angular  |
-| `fg-<prefix>-<shade>-f` | `any prefix from primary to error and any valid shade` | Set foreground color to shade of prefix with !important to override Angular  |
-| `bg-primary`            |                                                        | Set background color to default primary shade, equivalent to `bg-primary-40` |
-| `fg-primary-f`          |                                                        | Set foreground color to default primary shade, with !imporant attribute      |
-| `bg-neutral`            |                                                        | Set background color to default neutral shade, equivalent to `bg-neutral-98` |
-| `fg-neutral-f`          |                                                        | Set foreground color to default neutral shade, with !imporant attribute      |
+| Class name              | options                                                  | description                                                                  |
+|-------------------------|----------------------------------------------------------|------------------------------------------------------------------------------|
+| `bg-<shade>`            | `any valid shade`                                        | Set background color to shade of primary                                     |
+| `fg-<shade>`            | `any valid shade`                                        | Set foreground color to shade of primary                                     |
+| `bg-<prefix>-<shade>`   | `any prefix (primary, secondary,..) and any valid shade` | Set background color to shade of prefix                                      |
+| `fg-<prefix>-<shade>`   | `any prefix (primary, secondary,..) and any valid shade` | Set foreground color to shade of prefix                                      |
+| `bg-<shade>-f`          | `any valid shade`                                        | Set background color to shade of primary with !important to override Angular |
+| `fg-<shade>-f`          | `any valid shade`                                        | Set foreground color to shade of primary with !important to override Angular |
+| `bg-<prefix>-<shade>-f` | `any prefix (primary, secondary,..) and any valid shade` | Set background color to shade of prefix with !important to override Angular  |
+| `fg-<prefix>-<shade>-f` | `any prefix (primary, secondary,..) and any valid shade` | Set foreground color to shade of prefix with !important to override Angular  |
+| `bg-primary`            |                                                          | Set background color to default primary shade, equivalent to `bg-primary-40` |
+| `fg-primary-f`          |                                                          | Set foreground color to default primary shade, with !imporant attribute      |
+| `bg-neutral`            |                                                          | Set background color to default neutral shade, equivalent to `bg-neutral-98` |
+| `fg-neutral-f`          |                                                          | Set foreground color to default neutral shade, with !imporant attribute      |
 
 
 ### Flexbox
