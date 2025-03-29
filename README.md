@@ -77,6 +77,15 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 | `p-<size>rem-<side>` | 0.25, 0.5, 0.75, 1, .., 3.75, 4 ; t,l,r,b | Padding in rem at side |
 | `m-<size>rem-<side>` | 0.25, 0.5, 0.75, 1, .., 3.75, 4 ; t,l,r,b | Margin in rem at side  |
 
+
+### Scroll and drag
+
+| Class name            | description                       |
+|-----------------------|-----------------------------------|
+| `round-scrollbar`     | Blue scrollbar with rounded edges |
+| `highlighted-resizer` | Blue shaded radius resizer        |
+
+
 ## Usage
 
 ### Assets
