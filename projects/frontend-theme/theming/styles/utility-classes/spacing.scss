@@ -16,26 +16,26 @@ $positionsDict: (
     b: bottom,
     l: left
 );
-@each $gap in $gaps{
-    .g-#{decimal-to-name($gap)}r {
-        gap: #{$gap}rem;
+@for $i from 1 through 16 {
+    .g-#{decimal-to-name($i/4)}rem {
+        gap: #{$i/4}rem;
     }
 
-    .m-#{decimal-to-name($gap)}r {
-        margin: #{$gap}rem;
+    .m-#{decimal-to-name($i/4)}rem {
+        margin: #{$i/4}rem;
     }
 
-    .p-#{decimal-to-name($gap)}r {
-        padding: #{$gap}rem;
+    .p-#{decimal-to-name($i/4)}rem {
+        padding: #{$i/4}rem;
     }
 
     @each $position in $positions{
-        .m-#{decimal-to-name($gap)}r-#{$position} {
-            margin-#{map-get($positionsDict, $position)}: #{$gap}rem;
+        .m-#{decimal-to-name($i/4)}rem-#{$position} {
+            margin-#{map-get($positionsDict, $position)}: #{$i/4}rem;
         }
 
-        .p-#{decimal-to-name($gap)}r-#{$position} {
-            padding-#{map-get($positionsDict, $position)}: #{$gap}rem;
+        .p-#{decimal-to-name($i/4)}rem-#{$position} {
+            padding-#{map-get($positionsDict, $position)}: #{$i/4}rem;
         }
     }
 }

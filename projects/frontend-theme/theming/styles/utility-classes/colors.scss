@@ -1,61 +1,53 @@
 @import "../../definitions/variables.scss";
 
 @each $shade in $shades {
-    .b-#{$shade}-f {
+    .bg-#{$shade} {
+        background-color: var(--primary-#{$shade});
+    }
+
+    .fg-#{$shade} {
+        color: var(--primary-#{$shade});
+    }
+
+    .bg-#{$shade}-f {
         background-color: var(--primary-#{$shade}) !important;
     }
 
-    .f-#{$shade}-f {
-        color: var(--primary-#{$shade}) !important;
-    }
-
-    .b-#{$shade}-f {
-        background-color: var(--primary-#{$shade}) !important;
-    }
-
-    .f-#{$shade}-f {
+    .fg-#{$shade}-f {
         color: var(--primary-#{$shade}) !important;
     }
 
     @each $prefix in $prefixes {
-        .b-#{$prefix}-#{$shade} {
+        .bg-#{$prefix}-#{$shade} {
             background-color: var(--#{$prefix}-#{$shade});
         }
 
-        .f-#{$prefix}-#{$shade} {
+        .fg-#{$prefix}-#{$shade} {
             color: var(--#{$prefix}-#{$shade});
         }
 
-        .b-#{$prefix}-#{$shade}-f {
+        .bg-#{$prefix}-#{$shade}-f {
             background-color: var(--#{$prefix}-#{$shade}) !important;
         }
 
-        .f-#{$prefix}-#{$shade}-f {
+        .fg-#{$prefix}-#{$shade}-f {
             color: var(--#{$prefix}-#{$shade}) !important;
         }
     }
 }
 
-.b-primary {
+.bg-primary {
     background-color: var(--primary);
 }
 
-.b-primary-f {
+.bg-primary-f {
     background-color: var(--primary) !important;
 }
 
-.f-light-f {
-    color: var(--neutral-98) !important;
-}
-
-.b-light-f {
+.bg-neutral-f {
     background-color: var(--neutral-98) !important;
 }
 
-.f-light {
-    color: var(--neutral-98);
-}
-
-.b-light {
+.bg-neutral {
     background-color: var(--neutral-98);
 }

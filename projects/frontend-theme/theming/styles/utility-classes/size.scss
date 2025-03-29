@@ -23,6 +23,25 @@
     }
 }
 
+@function decimal-to-name($decimal){
+    $integer: floor($decimal);
+    $fraction: str-slice(#{$decimal},3);
+    @if $fraction == ""{
+        @return $integer;
+    }
+    @return $integer + "-" + $fraction;
+}
+
+@for $i from 1 through 16 {
+    .w-#{decimal-to-name($i / 4)}rem {
+        width: #{$i}rem;
+    }
+
+    .h-#{decimal-to-name($i / 4)}rem {
+        height: #{$i}rem;
+    }
+}
+
 
 .mw-1920 {
     max-width: 1920px;
