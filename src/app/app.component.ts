@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SentinelUser } from '@sentinel/layout';
 import packageJson from '../../projects/frontend-theme/package.json';
-import { NavBuilder, NavConfig } from '../../projects/frontend-theme/components/util/nav-builder';
+import { NavBuilder } from '../../projects/frontend-theme/components/util/nav-builder';
 
 @Component({
     selector: 'crczp-root',
@@ -17,8 +17,8 @@ export class AppComponent {
         pictureSrc: '/assets/logo/logo-blue.svg'
     };
 
-    agendasConfig: NavConfig = {
-        agendaContainers: [{
+    agendasConfig = [
+        {
             label: 'Basic',
             agendas: [
                 {
@@ -27,26 +27,25 @@ export class AppComponent {
                 }
             ]
         },
-            {
-                label: 'Sentinel',
-                agendas: [
-                    {
-                        label: 'Login',
-                        path: 'login'
-                    }
-                ]
-            },
-            {
-                label: 'Material',
-                agendas: [
-                    {
-                        label: 'Containers',
-                        path: 'containers'
-                    }
-                ]
-            }
-        ]
-    };
+        {
+            label: 'Sentinel',
+            agendas: [
+                {
+                    label: 'Login',
+                    path: 'login'
+                }
+            ]
+        },
+        {
+            label: 'Material',
+            agendas: [
+                {
+                    label: 'Containers',
+                    path: 'containers'
+                }
+            ]
+        }
+    ];
 
     get version(): string {
         return packageJson.version;

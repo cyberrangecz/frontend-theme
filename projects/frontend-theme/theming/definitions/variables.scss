@@ -16,6 +16,9 @@
                 @warn "Color shade #{$shade} not found for #{$prefix}.";
             }
         }
+
+        --primary: var(--primary-40);
+        --background: var(--neutral-98);
     }
 }
 

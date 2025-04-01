@@ -1,12 +1,13 @@
-<div class="flex-start m-1r-b">
+<div class="jc-fs m-1rem-b">
     <mat-button-toggle [checked]="outlined()"
                        (change)="outlined.set(!outlined())"
     >{{ outlined() ? 'Outlined' : 'Raised' }}
     </mat-button-toggle>
 </div>
 <div class="wh-100 center">
-    <div class="hflex g-1r mw-1920">
-        <crczp-element-display elementName="mat-card">
+    <div class="hflex w-100 jc-sb g-1rem mw-1920">
+        <crczp-element-display
+            elementName="mat-card">
             <mat-card [appearance]="outlined() ? 'outlined' : 'raised'">
                 <mat-card-header>
                     <mat-card-title>
