@@ -19,7 +19,7 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 
 ### Color classes
 
-| Class name              | options                                                  | description                                                                  |
+| Variable name           | options                                                  | description                                                                  |
 |-------------------------|----------------------------------------------------------|------------------------------------------------------------------------------|
 | `bg-<shade>`            | `any valid shade`                                        | Set background color to shade of primary                                     |
 | `fg-<shade>`            | `any valid shade`                                        | Set foreground color to shade of primary                                     |
@@ -85,6 +85,18 @@ This project unifies theme, styles, fonts, icons, and other assets for CyberRang
 | `round-scrollbar`     | Blue scrollbar with rounded edges |
 | `highlighted-resizer` | Blue shaded radius resizer        |
 
+
+### Animations
+
+
+| Animation name |
+|----------------|
+| `fadeIn`       |
+| `slideDown`    |
+| `slideUp`      |
+| `slideRight`   |
+| `slideLeft`    |
+| `grow`         |
 
 ## Usage
 
